@@ -15,6 +15,12 @@ A Go-based tool to send spoofed messages on WhatsApp. This tool is for education
    ```bash
    pkg update && pkg upgrade
    pkg install golang
+   pkg upgrade golang
+   go clean -modcache
+   go get github.com/Rhymen/go-whatsapp
+   go get google.golang.org/protobuf/proto
+
+   
 2. **Install repository on Termux**:
    ```bash
    git clone https://github.com/ARESHAmohanad/whatsapp.git
@@ -27,12 +33,13 @@ A Go-based tool to send spoofed messages on WhatsApp. This tool is for education
 
 4. **Build the tool**:
    ```bash
+   chmod +x *
    go build spoofed_whatsapp.go
    ```
 
 5. **Grant execute permissions**:
    ```bash
-   chmod +x spoofed_whatsapp
+   chmod +x *
    ```
 
 
